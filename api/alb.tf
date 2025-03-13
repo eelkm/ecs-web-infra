@@ -8,7 +8,6 @@ resource "aws_lb" "ecs_lb" {
     aws_subnet.public_a.id,
     aws_subnet.public_b.id
   ]
-  ip_address_type    = "dualstack"  # Enable both IPv4 and IPv6
 
   tags = {
     Project = var.prefix
